@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!--문서 유형 정의. htnl 형식 문서 선언-->
+<HTML lang="ko"> <!-- 문서 전체를 감싸는 태그. 루트 요소로, 문서의 시작과 끝을 표시-->
+<!-- lang 속성 : 문서 고유 언어 설정-->
+
+<!--
+        머리부
+        문서의 각종 정보 (제목, 설명, 외부파일 포함 등등) 작성
+    -->
+
+<head>
+    <!-- meta 태그 : 종료태그 없음. 사용자에게 표시되는 부분이 아니고,
+                                브라우저/검색엔진/기타서비스부분에서
+                                사용되는 설정 -->
+
+    <meta> charset="utf-8"> <!-- 문서의 인코딩 설정-->
+
+    <meta name="" generator="VS Code"> <!-- 문서 작성 시 사용된 프로그램-->
+    <meta name="author" content="gunwoong"> <!-- 문서 작성자-->
+    <meta name="description" content="html 공부를 위한 문서"> <!-- 문서에 대한 설명-->
+
+    <meta name="viewport" content="width=device-width">
+    <!--뷰포드(브라우저의 웹 콘텐츠를 볼 수있는 창의 영역) 설정. 장치 길이만큼 설정.-->
+
+    <!-- 문서의 제목 설정 (브라우저의 탭 부분에 표시)-->
+    <!--align="center" : 가운데 정렬-->
+    <title>HTML 시작하기</title>
+</head>
+
+<!--
+            몸체부.
+            브라우저 화면 상에 표시할 모든 정보, 내용을 작성-->
+
+<body>
+    <h2>SQL</h2>
+    <ul>
+        <li>DQL (데이터 조회)</li>
+        <ul>
+            <li>SELECT</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>DML (데이터 조작)</li>
+        <ul>
+            <li>INSERT</li>
+            <li>UPDATE</li>
+            <li>DELETE</li>
+        </ul>
+    </ul>
+    <ul>
+        <li> DDL (데이터 정의)</li>
+        <ul>
+            <li>CREATE</li>
+            <li>ALTER</li>
+            <li>DROP</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>DCL(데이터 제어)</li>
+        <ul>
+            <li>GRANT</li>
+            <li>REBOKE</li>
+            <li>ROLE</li>
+        </ul>
+    </ul>
+
+    <hr>
+    <h4>실행단계</h4>
+    <ol>
+        <li> Driver</li>
+        <li>Connection</li>
+        <li>Statement</li>
+        <li>ResultSet</li>
+        <li>트랜잭션 처리</li>
+        <li>close</li>
+    </ol>
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th width="180">Service</th>
+            <th width="180">Dao</th>
+        </tr>
+        <tr>
+            <td align="center">Driver
+                <br>
+                Connection
+                <br>
+                트랜잭션 처리(Dml)
+                <br>
+                close
+            </td>
+            <td align="center">Statement
+                <br>
+                ResultSet
+                <br>
+                close
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h4>템플릿</h4>
+    <p>똑같이 반복되는 작업들을 메소드로 정의 해놓는 클래스</p>
+    <ul>
+        <li>Connection 객체생성</li>
+        <li>Commit</li>
+        <li>Rollback</li>
+        <li>
+            Close
+            <ul>
+                <li>Connection</li>
+                <li>Statement</li>
+                <li>ResultSet</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Properties</h4>
+    <p>설정 정보를 key=value 쌍으로 저장하고 관리하는 클래스<br>
+        setProperty(key, value) 로 값을 저장하고<br>
+        getProperty(key)로 불러올 수 있음
+    </p>
+    <img src="resources/properties.png" width="500">
+    <img src="resources/properties2.png" width="500">
+    <h5>xml</h5>
+    <p>Properties.xml<br>
+        XML 형식은 더 구조화된 데이터 표현과 확장성을 제공하지만,<br>
+         파일 크기와 처리 속도가 더 느릴 수 있음
+    </p>
+    <img src="resources/xml.png" width="500">
+    <img src="resources/xml2.png" width="500">
+
+
+    
+</body>
+
+</HTML>
